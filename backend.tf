@@ -5,8 +5,8 @@ terraform {
   bucket = "terraform-state-rk840522"
   key = "terraform/jenkins-packer-demo"
   region = "eu-west-1"
-  # dynamodb_table = "terraform-state-lock-dynamo"
-  # encrypt        = true
+  dynamodb_table = "terraform-state-lock-dynamo"
+  encrypt        = true
  }
 }
 
