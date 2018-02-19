@@ -5,4 +5,5 @@ resource "aws_s3_bucket" "terraform-state" {
     tags {
         Name = "Terraform state"
     }
+    force_destroy = true
 }
